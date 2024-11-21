@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "firstmod",
+	"version": "${version}",
+	"name": "First Mod",
+	"description": "This is my first mod! Don't expect much :3",
+	"authors": [
+		"EMInteractive"
+	],
+	"contact": {
+		"homepage": "https://github.com/Kaylaable/firstmod",
+		"sources": "https://github.com/Kaylaable/firstmod"
+	},
+	"license": "MIT",
+	"icon": "assets/firstmod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.kaylaable.firstmod.FirstMod"
+		],
+		"fabric-datagen": [
+			"net.kaylaable.firstmod.FirstModDataGenerator"
+		],
+		"client": [
+			"net.kaylaable.firstmod.FirstModClient"
+		]
+	},
+	"mixins": [
+		"firstmod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
